@@ -1,13 +1,30 @@
 {
   "name": "04-portfolio-site-v1",
-  "private": true,
-  "version": "1.0.0",
+  "private": false,
+  "version": "2.0.0",
+  "description": "A modern developer portfolio template built with React, TypeScript, Tailwind CSS, and Framer Motion.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
   },
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript",
+    "tailwind",
+    "template"
+  ],
+  "author": "Kazi Musharraf",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-knight23/04-portfolio-site-v1.git"
+  },
+  "homepage": "https://04-portfolio-site-v1.vercel.app",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
