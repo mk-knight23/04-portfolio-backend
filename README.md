@@ -1,16 +1,18 @@
 # 04-portfolio-site-v1
 
-Modern developer portfolio template with React, TypeScript, and Tailwind CSS.
+✨ Professional Repository Showcase Template
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mk-knight23/04-portfolio-site-v1)
+## Live Deployments
+
+- **GitHub Pages:** https://mk-knight23.github.io/04-portfolio-site-v1/
+- **Vercel:** https://04-portfolio-site-v1.vercel.app
+
+Status: 🟡 GH Pages Live | Vercel Pending (Daily Limit)
 
 ## Features
-- 🎨 Modern glassmorphism design
-- ⚡ React 18 + TypeScript + Vite
-- 🎬 Framer Motion animations
-- 📱 Fully responsive
-- ♿ Accessible (skip links, ARIA)
-- 🔍 SEO optimized
+- 📱 Mobile Responsive
+- ⚡ Fast Performance
+- 🎨 Modern UI/UX
 
 ## Quick Start
 ```bash
@@ -19,9 +21,6 @@ cd 04-portfolio-site-v1
 npm install
 npm run dev
 ```
-
-## Tech Stack
-React 18, TypeScript, Tailwind CSS, Framer Motion, Vite, Lucide Icons
 
 ## License
 MIT
