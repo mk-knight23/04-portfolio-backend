@@ -83,7 +83,7 @@ function App() {
 
                 <div className="flex gap-4 mb-8">
                     <SocialLink icon={<Twitter className="w-5 h-5" />} href="https://twitter.com/mk_knight_23" />
-                    <SocialLink icon={<Linkedin className="w-5 h-5" />} href="https://www.linkedin.com/in/mk-knight-1373271b8" />
+                    <SocialLink icon={<Linkedin className="w-5 h-5" />} href="https://www.linkedin.com/in/mk-knight23" />
                     <SocialLink icon={<Github className="w-5 h-5" />} href="https://github.com/mk-knight23" />
                 </div>
 
