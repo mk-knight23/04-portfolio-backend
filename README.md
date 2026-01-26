@@ -1,43 +1,61 @@
-# 04-portfolio-site-v1
+# portfolio-personal-site
 
-✨ Evolution of a digital identity. This portfolio iteration focuses on clean minimalist architecture and high-fidelity typography.
+Personal portfolio website showcasing projects and skills.
 
-## Features
-- 🖋️ Minimalist Type-Focused UI
-- 🎨 Sophisticated Gray/Dark Space Theme
-- 📱 Responsive Multi-Resolution Support
-- ⚛️ Powered by React 18
-- ⚡ Efficient Build Pipeline with Vite 6
-
-## Tech Stack
-- **Frontend**: React 18, Tailwind CSS v4
-- **Build Tool**: Vite 6
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-
-## Quick Start
-```bash
-npm install
-npm run dev
-```
-
-## Documentation
-- [Architecture Overview](docs/ARCHITECTURE.md)
-- [Design System](docs/DESIGN.md)
-- [Deployment Guide](docs/DEPLOY.md)
-
-## Live Deployment
-- **GitHub Pages**: [https://mk-knight23.github.io/04-portfolio-site-v1/](https://mk-knight23.github.io/04-portfolio-site-v1/)
-- **Status**: 🟢 Live
-- **Modernized**: 2026-01-23
+Part of the MUSHARRAF KAZI portfolio ecosystem — AI Engineer & Indie Builder
+specializing in Agentic AI, Developer Tools, Multi-LLM Routing, and SaaS Automation.
 
 ---
-*Maintained by [Kazi Musharraf](https://github.com/mk-knight23)*
 
-## 🌐 Live Deployments
+## About
 
-- Vercel: https://04-portfolio-site-v1.vercel.app
-- GitHub Pages: https://mk-knight23.github.io/04-portfolio-site-v1/
+**MUSHARRAF KAZI** — AI Engineer & Indie Builder
 
-Status: 🟢 Deployments Live  
-Last Updated: 2026-01-23
+Building the VIBE Ecosystem — a multi-product AI developer platform focused on
+AI-powered coding workflows, multi-agent orchestration, and production-grade
+developer tooling.
+
+---
+
+## VIBE Ecosystem
+
+**Flagship Project — Founder & AI Engineer**
+
+A multi-product AI developer platform:
+
+| Product | Description |
+|---------|-------------|
+| VIBE CLI | Multi-agent coding tool with TUI, LLM router, execution modes |
+| VIBE VS Code | AI IDE assistant with streaming chat |
+| VIBE Web | Documentation hub for the ecosystem |
+| VIBE Chat | AI-powered website builder |
+
+---
+
+## What I Build
+
+- **Agentic AI Systems** — Multi-agent frameworks, RAG pipelines, LLM routers
+- **Developer Tools** — CLI applications, VS Code extensions, automation
+- **SaaS Platforms** — Full-stack web applications, APIs, services
+- **Web Applications** — React, Next.js, TypeScript frontends
+
+---
+
+## Selected Projects
+
+### Flagship
+- **VIBE Ecosystem** — Multi-product AI developer platform
+
+### Web Applications
+- Country Explorer, Recipe Finder, Meme Generator, Blog Platform
+
+### Developer Tools
+- Password Generator, Image Uploader, Firebase Utilities
+
+---
+
+## Connect
+
+- **Email:** mk.knight970@gmail.com
+- **GitHub:** [@mk-knight23](https://github.com/mk-knight23)
+- **LinkedIn:** [kazi-musharraf](https://www.linkedin.com/in/kazi-musharraf-0674871a4)
