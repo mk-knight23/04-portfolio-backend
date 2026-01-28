@@ -1,61 +1,79 @@
-# portfolio-personal-site
+# Kazi Musharraf — Backend Developer
 
-Personal portfolio website showcasing projects and skills.
+**Building Scalable APIs & Systems with Java Spring Boot, Node.js & PostgreSQL**
 
-Part of the MUSHARRAF KAZI portfolio ecosystem — AI Engineer & Indie Builder
-specializing in Agentic AI, Developer Tools, Multi-LLM Routing, and SaaS Automation.
+---
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-F59E0B?style=for-the-badge&logo=github)](https://mk-knight23.github.io/04-portfolio-backend/)
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/04-portfolio-backend)
 
 ---
 
 ## About
 
-**MUSHARRAF KAZI** — AI Engineer & Indie Builder
+Backend Developer specializing in Java Spring Boot, Node.js, PostgreSQL, MongoDB, REST APIs, and scalable system architecture. Currently building the **VIBE Ecosystem** — a multi-product AI developer platform.
 
-Building the VIBE Ecosystem — a multi-product AI developer platform focused on
-AI-powered coding workflows, multi-agent orchestration, and production-grade
-developer tooling.
+**Experience:** Project Engineer (TURBO) at Wipro (Jul 2022 – Present)
 
 ---
 
-## VIBE Ecosystem
+## Features
 
-**Flagship Project — Founder & AI Engineer**
-
-A multi-product AI developer platform:
-
-| Product | Description |
-|---------|-------------|
-| VIBE CLI | Multi-agent coding tool with TUI, LLM router, execution modes |
-| VIBE VS Code | AI IDE assistant with streaming chat |
-| VIBE Web | Documentation hub for the ecosystem |
-| VIBE Chat | AI-powered website builder |
+- **Resume & Cover Letter Sections** — Complete professional history and 3-6 month impact plan
+- **VIBE Ecosystem Showcase** — Multi-product AI developer platform overview
+- **Clean Interface** — Stone/amber color scheme with smooth animations
+- **Contact & Social Links** — Direct access to email, phone, GitHub, and LinkedIn
 
 ---
 
-## What I Build
+## Tech Stack
 
-- **Agentic AI Systems** — Multi-agent frameworks, RAG pipelines, LLM routers
-- **Developer Tools** — CLI applications, VS Code extensions, automation
-- **SaaS Platforms** — Full-stack web applications, APIs, services
-- **Web Applications** — React, Next.js, TypeScript frontends
-
----
-
-## Selected Projects
-
-### Flagship
-- **VIBE Ecosystem** — Multi-product AI developer platform
-
-### Web Applications
-- Country Explorer, Recipe Finder, Meme Generator, Blog Platform
-
-### Developer Tools
-- Password Generator, Image Uploader, Firebase Utilities
+- **Frontend:** React 18, TypeScript, Framer Motion
+- **Styling:** Tailwind CSS (stone/amber theme)
+- **Build:** Vite
+- **Deployment:** GitHub Pages
 
 ---
 
-## Connect
+## Deployment
 
-- **Email:** mk.knight970@gmail.com
-- **GitHub:** [@mk-knight23](https://github.com/mk-knight23)
-- **LinkedIn:** [kazi-musharraf](https://www.linkedin.com/in/kazi-musharraf-0674871a4)
+| Platform | URL |
+|----------|-----|
+| **GitHub Pages** | [mk-knight23.github.io/04-portfolio-backend](https://mk-knight23.github.io/04-portfolio-backend/) |
+
+---
+
+## Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/mk-knight23/04-portfolio-backend.git
+
+# Navigate to project
+cd 04-portfolio-backend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## Contact
+
+- **Email:** [mk.knight970@gmail.com](mailto:mk.knight970@gmail.com)
+- **Phone:** +91 9765490536
+- **GitHub:** [mk-knight23](https://github.com/mk-knight23)
+- **LinkedIn:** [kazi-musharraf-0674871a4](https://www.linkedin.com/in/kazi-musharraf-0674871a4)
+- **Location:** Hyderabad, India
+
+---
+
+*Kazi Musharraf — Backend Developer — Part of 8-portfolio ecosystem*
+
+*Last Updated: January 2025*
