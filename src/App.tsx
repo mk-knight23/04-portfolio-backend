@@ -23,31 +23,38 @@ import {
 // VIBE Ecosystem Products
 const vibeProducts = [
     {
-        name: 'VIBE CLI',
-        tagline: 'Multi-agent AI coding tool',
-        description: 'Single-command TUI, multi-LLM router, execution modes, security-first approvals.',
+        name: 'AI-VIBE-Automation',
+        tagline: 'Workflow orchestration engine',
+        description: 'Handling background tasks and cross-platform agent sync with high-performance services.',
+        icon: Zap,
+        status: 'In Development'
+    },
+    {
+        name: 'AI-VIBE-CLI',
+        tagline: 'Multi-agent AI coding interface',
+        description: 'Single-command TUI, multi-LLM router, and security-first command execution.',
         icon: Terminal,
         status: 'In Development'
     },
     {
-        name: 'VIBE VS Code',
-        tagline: 'Multi-agent IDE assistant',
-        description: 'CLI parity, state-machine orchestration, real-time streaming chat.',
-        icon: Code2,
-        status: 'Planned'
-    },
-    {
-        name: 'VIBE Web',
-        tagline: 'Documentation hub',
-        description: 'Documentation and onboarding hub for the entire ecosystem.',
-        icon: Globe,
+        name: 'AI-VIBE-ChatWeb',
+        tagline: 'Conversational interface API',
+        description: 'High-availability backend for human-agent collaboration and documentation.',
+        icon: MessageSquare,
         status: 'Live'
     },
     {
-        name: 'VIBE Chat',
-        tagline: 'AI website builder',
-        description: 'AI web app & website builder powered by generative agents.',
-        icon: MessageSquare,
+        name: 'AI-VIBE-WebBuilder',
+        tagline: 'Generative site architect',
+        description: 'AI-driven web application builder backend that understands design systems.',
+        icon: Globe,
+        status: 'Planned'
+    },
+    {
+        name: 'AI-VIBE-VSCode',
+        tagline: 'State-machine IDE assistant',
+        description: 'Unified agent toolsets and IDE-to-cloud synchronization services.',
+        icon: Code2,
         status: 'Planned'
     }
 ];
@@ -76,7 +83,7 @@ function App() {
             setScrolled(window.scrollY > 50);
 
             // Track active section
-            const sections = ['about', 'vibe', 'work', 'skills', 'resume', 'contact'];
+            const sections = ['about', 'vibe', 'work', 'skills', 'api-docs', 'architecture', 'resume', 'contact'];
             for (const section of sections) {
                 const element = document.getElementById(section);
                 if (element) {
@@ -112,15 +119,14 @@ function App() {
                         <span className="text-sm font-semibold tracking-wide text-slate-900">KAZI MUSHARRAF</span>
                     </div>
                     <div className="flex items-center gap-10">
-                        {['about', 'vibe', 'work', 'skills', 'resume', 'contact'].map((section) => (
+                        {['about', 'vibe', 'work', 'skills', 'api-docs', 'architecture', 'resume', 'contact'].map((section) => (
                             <button
                                 key={section}
                                 onClick={() => scrollTo(section)}
-                                className={`text-sm capitalize font-medium transition-colors relative ${
-                                    activeSection === section
+                                className={`text-sm capitalize font-medium transition-colors relative ${activeSection === section
                                         ? 'text-amber-600'
                                         : 'text-slate-600 hover:text-slate-900'
-                                }`}
+                                    }`}
                             >
                                 {section}
                                 {activeSection === section && (
@@ -152,7 +158,7 @@ function App() {
                         <span className="text-amber-400">Scalable Systems</span>
                     </h1>
                     <p className="text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl">
-                        Senior Backend Engineer at Wipro, specializing in distributed systems, high-performance APIs, and enterprise-grade infrastructure.
+                        Senior Backend Engineer architecting the <span className="text-amber-400 font-bold">AI-VIBE-ECOSYSTEM v2.0</span>. Specializing in distributed agents, high-performance APIs, and multi-product orchestration.
                     </p>
                     <div className="flex flex-col sm:flex-row items-start gap-4">
                         <button
@@ -220,7 +226,7 @@ function App() {
                             <div className="text-sm text-slate-500 mt-2 font-medium">Projects Delivered</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-5xl font-bold text-slate-900">4</div>
+                            <div className="text-5xl font-bold text-slate-900">05</div>
                             <div className="text-sm text-slate-500 mt-2 font-medium">Product Platforms</div>
                         </div>
                         <div className="text-center">
@@ -245,7 +251,7 @@ function App() {
                             Flagship Initiative
                         </span>
                     </div>
-                    <h2 className="text-4xl font-bold mb-4 text-slate-900">VIBE Ecosystem</h2>
+                    <h2 className="text-4xl font-bold mb-4 text-slate-900">AI-VIBE-ECOSYSTEM v2.0</h2>
                     <p className="text-slate-600 mb-12 text-lg max-w-2xl">
                         A multi-product AI developer platform designed to transform how engineers build, deploy, and scale software.
                     </p>
@@ -268,8 +274,8 @@ function App() {
                                         <div className="flex items-center gap-3 mb-2">
                                             <h3 className="text-xl font-semibold text-slate-900">{product.name}</h3>
                                             <span className={`text-xs px-3 py-1 rounded-full font-medium ${product.status === 'Live'
-                                                    ? 'bg-emerald-100 text-emerald-700'
-                                                    : product.status === 'In Development'
+                                                ? 'bg-emerald-100 text-emerald-700'
+                                                : product.status === 'In Development'
                                                     ? 'bg-amber-100 text-amber-700'
                                                     : 'bg-slate-100 text-slate-600'
                                                 }`}>
@@ -408,6 +414,143 @@ function App() {
                 </motion.div>
             </section>
 
+            {/* vNext: API Documentation Section */}
+            <section id="api-docs" className="py-20 px-8 bg-slate-900">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="max-w-6xl mx-auto"
+                >
+                    <div className="flex items-center gap-3 mb-4">
+                        <Terminal className="w-6 h-6 text-amber-400" />
+                        <h2 className="text-3xl font-bold text-white">API Documentation</h2>
+                    </div>
+                    <p className="text-slate-400 mb-10 text-lg">Sample endpoints from backend services I've built</p>
+
+                    <div className="space-y-6">
+                        {/* GET endpoint */}
+                        <div className="bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700">
+                            <div className="flex items-center gap-3 px-6 py-4 bg-slate-800 border-b border-slate-700">
+                                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded text-sm font-bold">GET</span>
+                                <code className="text-slate-300 font-mono text-sm">/api/v1/users/:id</code>
+                            </div>
+                            <div className="p-6 space-y-4">
+                                <div>
+                                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Description</p>
+                                    <p className="text-slate-400 text-sm">Fetch user profile with associated permissions and preferences</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Response</p>
+                                    <pre className="bg-slate-900 rounded-lg p-4 text-xs text-slate-300 overflow-x-auto">
+                                        {`{
+  "id": "usr_123",
+  "name": "Kazi Musharraf",
+  "email": "kazi@example.com",
+  "role": "admin",
+  "permissions": ["read", "write", "delete"]
+}`}
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* POST endpoint */}
+                        <div className="bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700">
+                            <div className="flex items-center gap-3 px-6 py-4 bg-slate-800 border-b border-slate-700">
+                                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded text-sm font-bold">POST</span>
+                                <code className="text-slate-300 font-mono text-sm">/api/v1/auth/login</code>
+                            </div>
+                            <div className="p-6 space-y-4">
+                                <div>
+                                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Description</p>
+                                    <p className="text-slate-400 text-sm">Authenticate user and return JWT access token</p>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Request Body</p>
+                                    <pre className="bg-slate-900 rounded-lg p-4 text-xs text-slate-300 overflow-x-auto">
+                                        {`{
+  "email": "user@example.com",
+  "password": "hashed_password_here"
+}`}
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </section>
+
+            {/* vNext: Architecture Diagram Section */}
+            <section id="architecture" className="py-20 px-8 bg-slate-100">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="max-w-6xl mx-auto"
+                >
+                    <div className="flex items-center gap-3 mb-4">
+                        <Layers className="w-6 h-6 text-amber-600" />
+                        <h2 className="text-3xl font-bold text-slate-900">System Architecture</h2>
+                    </div>
+                    <p className="text-slate-600 mb-10 text-lg">Typical microservices architecture I design and implement</p>
+
+                    <div className="bg-white rounded-xl border border-slate-200 p-8">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+                            {/* Client */}
+                            <div className="text-center">
+                                <div className="w-20 h-20 bg-slate-100 rounded-xl flex items-center justify-center mb-3 mx-auto border-2 border-slate-300">
+                                    <Globe className="w-8 h-8 text-slate-600" />
+                                </div>
+                                <p className="text-sm font-semibold text-slate-700">Client Apps</p>
+                            </div>
+
+                            <ArrowRight className="w-6 h-6 text-slate-400 rotate-90 lg:rotate-0" />
+
+                            {/* API Gateway */}
+                            <div className="text-center">
+                                <div className="w-24 h-20 bg-amber-100 rounded-xl flex items-center justify-center mb-3 mx-auto border-2 border-amber-400">
+                                    <Shield className="w-8 h-8 text-amber-600" />
+                                </div>
+                                <p className="text-sm font-semibold text-slate-700">API Gateway</p>
+                                <p className="text-xs text-slate-500">Auth + Rate Limit</p>
+                            </div>
+
+                            <ArrowRight className="w-6 h-6 text-slate-400 rotate-90 lg:rotate-0" />
+
+                            {/* Services */}
+                            <div className="flex flex-col gap-4">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-16 h-12 bg-slate-100 rounded-lg flex items-center justify-center border border-slate-300">
+                                        <Cpu className="w-5 h-5 text-slate-600" />
+                                    </div>
+                                    <div className="w-16 h-12 bg-slate-100 rounded-lg flex items-center justify-center border border-slate-300">
+                                        <Zap className="w-5 h-5 text-slate-600" />
+                                    </div>
+                                    <div className="w-16 h-12 bg-slate-100 rounded-lg flex items-center justify-center border border-slate-300">
+                                        <MessageSquare className="w-5 h-5 text-slate-600" />
+                                    </div>
+                                </div>
+                                <p className="text-xs text-slate-500 text-center">Microservices</p>
+                            </div>
+
+                            <ArrowRight className="w-6 h-6 text-slate-400 rotate-90 lg:rotate-0" />
+
+                            {/* Database */}
+                            <div className="text-center">
+                                <div className="w-20 h-20 bg-slate-100 rounded-xl flex items-center justify-center mb-3 mx-auto border-2 border-slate-300">
+                                    <Layers className="w-8 h-8 text-slate-600" />
+                                </div>
+                                <p className="text-sm font-semibold text-slate-700">Data Layer</p>
+                                <p className="text-xs text-slate-500">PostgreSQL + Redis</p>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </section>
+
             {/* Resume Section */}
             <section id="resume" className="py-20 px-8 bg-white">
                 <motion.div
@@ -488,12 +631,12 @@ function App() {
                                 <h3 className="text-lg font-semibold text-slate-900 mb-6 pb-2 border-b border-slate-200">Connect</h3>
                                 <div className="space-y-3">
                                     <a href="https://github.com/mk-knight23" target="_blank" rel="noopener"
-                                       className="flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors">
+                                        className="flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors">
                                         <Github className="w-4 h-4" />
                                         <span className="text-sm">github.com/mk-knight23</span>
                                     </a>
                                     <a href="https://www.linkedin.com/in/kazi-musharraf-0674871a4" target="_blank" rel="noopener"
-                                       className="flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors">
+                                        className="flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors">
                                         <Linkedin className="w-4 h-4" />
                                         <span className="text-sm">linkedin.com/in/kazi-musharraf</span>
                                     </a>
