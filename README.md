@@ -1,3 +1,5 @@
+# [![CI/CD](https://github.com/mk-knight23/04-portfolio-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/04-portfolio-backend/actions)
+
 # 🚀 04-portfolio-backend (Collective Production Edition)
 
 ## 💎 Overview
